@@ -367,6 +367,8 @@ const Home = ({
           content="height=device-height ,width=device-width, initial-scale=1, user-scalable=no"
         />
         <link rel="icon" href="/favicon.ico" />
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2776294322568123"
+     crossorigin="anonymous"></script>
       </Head>
       {selectedConversation && (
         <main
