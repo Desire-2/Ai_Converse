@@ -5,7 +5,7 @@ import { GetServerSideProps } from 'next';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from 'next/head';
-import { NextScript } from 'next/document';
+import { NextScript } from 'next/script';
 
 import { useCreateReducer } from '@/hooks/useCreateReducer';
 
@@ -371,7 +371,7 @@ const Home = ({
 
         {/* Google AdSense script */}
         <script
-          async
+          strategy="lazyOnload
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2776294322568123`}
           crossorigin="anonymous"
         ></script>
