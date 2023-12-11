@@ -5,6 +5,7 @@ import { GetServerSideProps } from 'next';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from 'next/head';
+import { NextScript } from 'next/document';
 
 import { useCreateReducer } from '@/hooks/useCreateReducer';
 
@@ -40,7 +41,6 @@ import HomeContext from './home.context';
 import { HomeInitialState, initialState } from './home.state';
 
 import { v4 as uuidv4 } from 'uuid';
-import { NextScript } from 'next/document';
 
 interface Props {
   serverSideApiKeyIsSet: boolean;
@@ -368,11 +368,6 @@ const Home = ({
           content="height=device-height ,width=device-width, initial-scale=1, user-scalable=no"
         />
         <link rel="icon" href="/favicon.ico" />
-        <script
-          async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2776294322568123`}
-          crossorigin="anonymous"
-        ></script>
 
         {/* Google AdSense script */}
         <script
@@ -403,6 +398,7 @@ const Home = ({
           </div>
         </main>
       )}
+      <NextScript/>
     </HomeContext.Provider>
   );
 };
