@@ -23,7 +23,7 @@ import {
 } from '@/utils/app/conversation';
 import { saveFolders } from '@/utils/app/folders';
 import { savePrompts } from '@/utils/app/prompts';
-import { getSettings } from '@/utils/app/settings';
+import { getSettings } from '@./utils/app/settings';
 
 import { Conversation } from '@/types/chat';
 import { KeyValuePair } from '@/types/data';
@@ -362,13 +362,12 @@ const Home = ({
       <Head>
         <title>Ai Converse</title>
         <meta name="description" content="The Allien Tv Team." />
+        <meta name="google-adsense-account" content="ca-pub-2776294322568123"></meta>
         <meta
           name="viewport"
           content="height=device-height ,width=device-width, initial-scale=1, user-scalable=no"
         />
         <link rel="icon" href="/favicon.ico" />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2776294322568123"
-     crossorigin="anonymous"></script>
       </Head>
       {selectedConversation && (
         <main
