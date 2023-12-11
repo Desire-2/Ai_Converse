@@ -5,7 +5,6 @@ import { GetServerSideProps } from 'next';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from 'next/head';
-import { NextScript } from 'next/script';
 
 import { useCreateReducer } from '@/hooks/useCreateReducer';
 
@@ -368,13 +367,6 @@ const Home = ({
           content="height=device-height ,width=device-width, initial-scale=1, user-scalable=no"
         />
         <link rel="icon" href="/favicon.ico" />
-
-        {/* Google AdSense script */}
-        <script
-          async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2776294322568123`}
-          crossOrigin="anonymous"
-        ></script>
       </Head>
       {selectedConversation && (
         <main
@@ -398,7 +390,6 @@ const Home = ({
           </div>
         </main>
       )}
-      <NextScript/>
     </HomeContext.Provider>
   );
 };
