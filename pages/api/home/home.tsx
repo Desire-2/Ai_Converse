@@ -40,6 +40,7 @@ import HomeContext from './home.context';
 import { HomeInitialState, initialState } from './home.state';
 
 import { v4 as uuidv4 } from 'uuid';
+import { NextScript } from 'next/document';
 
 interface Props {
   serverSideApiKeyIsSet: boolean;
@@ -362,12 +363,23 @@ const Home = ({
       <Head>
         <title>Ai Converse</title>
         <meta name="description" content="The Allien Tv Team." />
-        <meta name="google-adsense-account" content="ca-pub-2776294322568123"></meta>
         <meta
           name="viewport"
           content="height=device-height ,width=device-width, initial-scale=1, user-scalable=no"
         />
         <link rel="icon" href="/favicon.ico" />
+        <script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2776294322568123`}
+          crossorigin="anonymous"
+        ></script>
+
+        {/* Google AdSense script */}
+        <script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2776294322568123`}
+          crossorigin="anonymous"
+        ></script>
       </Head>
       {selectedConversation && (
         <main
