@@ -13,7 +13,7 @@
 **1. Clone Repo**
 
 ```bash
-git clone https://github.com/mckaywrigley/chatbot-ui.git
+git clone https://github.com/Desire-2/Ai_Converse.git
 ```
 
 **2. Install Dependencies**
