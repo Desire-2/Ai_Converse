@@ -361,11 +361,13 @@ const Home = ({
     >
       <Head>
         <title>Ai Converse</title>
+        <meta name="google-adsense-account" content="ca-pub-2776294322568123"></meta>
         <meta name="description" content="The Allien Tv Team." />
         <meta
           name="viewport"
           content="height=device-height ,width=device-width, initial-scale=1, user-scalable=no"
         />
+        
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {selectedConversation && (

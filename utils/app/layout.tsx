@@ -8,6 +8,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+      <meta name="google-adsense-account" content="ca-pub-2776294322568123">
         <title>Next.js</title>
       </head>
       <body>
