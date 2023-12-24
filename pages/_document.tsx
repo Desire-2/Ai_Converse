@@ -20,8 +20,6 @@ export default function Document(props: Props) {
       <body>
         <Main />
         <NextScript />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2776294322568123"
-     crossorigin="anonymous"></script>
       </body>
     </Html>
   );
