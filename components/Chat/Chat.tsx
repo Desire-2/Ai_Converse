@@ -510,7 +510,3 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
   );
 });
 Chat.displayName = 'Chat';
-<head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2776294322568123"
-     crossorigin="anonymous"></script>
-</head>

@@ -15,6 +15,8 @@ export default function Document(props: Props) {
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-title" content="Ai Converse"></meta>
         <meta name="google-adsense-account" content="ca-pub-2776294322568123"></meta>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2776294322568123"
+     crossorigin="anonymous"></script>
       </Head>
       <body>
         <Main />
