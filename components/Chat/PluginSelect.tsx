@@ -84,7 +84,7 @@ export const PluginSelect: FC<Props> = ({
             value="chatgpt"
             className="dark:bg-[#343541] dark:text-white"
           >
-            ChatGPT
+            Ai Converse
           </option>
 
           {PluginList.map((plugin) => (
