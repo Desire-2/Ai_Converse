@@ -109,6 +109,9 @@ const Folder = ({
               onKeyDown={handleEnterDown}
               autoFocus
             />
+            <head>
+            <meta name="google-adsense-account" content="ca-pub-2776294322568123" />
+            </head>
           </div>
         ) : (
           <button

@@ -355,7 +355,7 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
             Welcome to Ai Convverse
           </div>
           <div className="text-center text-lg text-black dark:text-white">
-            <div className="mb-8">{`Chatbot UI is an open source clone of OpenAI's ChatGPT UI.`}</div>
+            <div className="mb-8">{`Ai Converse is an open source clone of Developed by Desire BIKORIMANA.`}</div>
             <div className="mb-2 font-bold">
               Important: Ai Converse is 100% unaffiliated with OpenAI.
             </div>
@@ -487,6 +487,9 @@ export const Chat = memo(({ stopConversationRef }: Props) => {
                 />
               </>
             )}
+            <head>
+            <meta name="google-adsense-account" content="ca-pub-2776294322568123" />
+            </head>
           </div>
 
           <ChatInput

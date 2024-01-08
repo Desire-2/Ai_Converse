@@ -267,6 +267,9 @@ export const ChatInput = ({
             <IconPlayerStop size={16} /> {t('Stop Generating')}
           </button>
         )}
+        <head>
+        <meta name="google-adsense-account" content="ca-pub-2776294322568123" />
+        </head>
 
         {!messageIsStreaming &&
           selectedConversation &&

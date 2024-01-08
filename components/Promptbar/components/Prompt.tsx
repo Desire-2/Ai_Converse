@@ -76,6 +76,7 @@ export const PromptComponent = ({ prompt }: Props) => {
   }, [isRenaming, isDeleting]);
 
   return (
+    
     <div className="relative flex items-center">
       <button
         className="flex w-full cursor-pointer items-center gap-3 rounded-lg p-3 text-sm transition-colors duration-200 hover:bg-[#343541]/90"
@@ -90,6 +91,7 @@ export const PromptComponent = ({ prompt }: Props) => {
           setIsRenaming(false);
           setRenameValue('');
         }}
+        
       >
         <IconBulbFilled size={18} />
 
@@ -97,6 +99,9 @@ export const PromptComponent = ({ prompt }: Props) => {
           {prompt.name}
         </div>
       </button>
+      <head>
+      <meta name="google-adsense-account" content="ca-pub-2776294322568123" />
+      </head>
 
       {(isDeleting || isRenaming) && (
         <div className="absolute right-1 z-10 flex text-gray-300">
