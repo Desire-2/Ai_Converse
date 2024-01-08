@@ -363,6 +363,7 @@ const Home = ({
         <title>Ai Converse</title>
         <meta name="google-site-verification" content="uZfQKmo-IfD-igELAOHe3cgYoxk-FIsYs_s47haAULo" />
         <meta name="description" content="The Allien Tv Team." />
+        <meta name="google-adsense-account" content="ca-pub-2776294322568123" />
         <meta
           name="viewport"
           content="height=device-height ,width=device-width, initial-scale=1, user-scalable=no"
