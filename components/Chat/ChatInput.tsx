@@ -233,9 +233,8 @@ export const ChatInput = ({
     if (textareaRef && textareaRef.current) {
       textareaRef.current.style.height = 'inherit';
       textareaRef.current.style.height = `${textareaRef.current?.scrollHeight}px`;
-      textareaRef.current.style.overflow = `${
-        textareaRef?.current?.scrollHeight > 400 ? 'auto' : 'hidden'
-      }`;
+      textareaRef.current.style.overflow = `${textareaRef?.current?.scrollHeight > 400 ? 'auto' : 'hidden'
+        }`;
     }
   }, [content]);
 
@@ -256,9 +255,21 @@ export const ChatInput = ({
     };
   }, []);
 
+  const handleWhatsAppClick = () => {
+    const initialMessages = encodeURIComponent('Hello! I would like to chat with you. Can you help me? 🤖');
+    const whatsappURL = `https://wa.me/+250780784924/?text=${initialMessages}`;
+    window.open(whatsappURL, '_blank');
+  };
+
   return (
     <div className="absolute bottom-0 left-0 w-full border-transparent bg-gradient-to-b from-transparent via-white to-white pt-6 dark:border-white/20 dark:via-[#343541] dark:to-[#343541] md:pt-2">
       <div className="stretch mx-2 mt-4 flex flex-row gap-3 last:mb-2 md:mx-4 md:mt-[52px] md:last:mb-6 lg:mx-auto lg:max-w-3xl">
+        <button
+          className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+          onClick={handleWhatsAppClick}
+        >
+          Chat with us on WhatsApp
+        </button>
         {messageIsStreaming && (
           <button
             className="absolute top-0 left-0 right-0 mx-auto mb-3 flex w-fit items-center gap-3 rounded border border-neutral-200 bg-white py-2 px-4 text-black hover:opacity-50 dark:border-neutral-600 dark:bg-[#343541] dark:text-white md:mb-0 md:mt-2"
@@ -267,9 +278,6 @@ export const ChatInput = ({
             <IconPlayerStop size={16} /> {t('Stop Generating')}
           </button>
         )}
-        <head>
-        <meta name="google-adsense-account" content="ca-pub-2776294322568123" />
-        </head>
 
         {!messageIsStreaming &&
           selectedConversation &&
@@ -286,7 +294,7 @@ export const ChatInput = ({
           <button
             className="absolute left-2 top-2 rounded-sm p-1 text-neutral-800 opacity-60 hover:bg-neutral-200 hover:text-neutral-900 dark:bg-opacity-50 dark:text-neutral-100 dark:hover:text-neutral-200"
             onClick={() => setShowPluginSelect(!showPluginSelect)}
-            onKeyDown={(e) => {}}
+            onKeyDown={(e) => { }}
           >
             {plugin ? <IconBrandGoogle size={20} /> : <IconBolt size={20} />}
           </button>
@@ -321,11 +329,10 @@ export const ChatInput = ({
               resize: 'none',
               bottom: `${textareaRef?.current?.scrollHeight}px`,
               maxHeight: '400px',
-              overflow: `${
-                textareaRef.current && textareaRef.current.scrollHeight > 400
+              overflow: `${textareaRef.current && textareaRef.current.scrollHeight > 400
                   ? 'auto'
                   : 'hidden'
-              }`,
+                }`,
             }}
             placeholder={
               t('Type a message or type "/" to select a prompt...') || ''
@@ -395,6 +402,27 @@ export const ChatInput = ({
         {t(
           "Ai Converse is an advanced chatbot kit Developed by Desire BIKORIMANA",
         )}
+      </div>
+      {/* Google AdSense */}
+      <div className="text-center">
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2776294322568123"
+          crossOrigin="anonymous"
+        />
+        <ins
+          className="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client="ca-pub-2776294322568123"
+          data-ad-slot="7061749052"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
+          }}
+        />
       </div>
     </div>
   );
