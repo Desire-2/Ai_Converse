@@ -256,13 +256,40 @@ export const ChatInput = ({
   }, []);
 
   const handleWhatsAppClick = () => {
-    const initialMessages = encodeURIComponent('Hello! I would like to chat with you. Can you help me? 🤖');
-    const whatsappURL = `https://wa.me/+250780784924/?text=${initialMessages}`;
+    const initialMessages = encodeURIComponent('Hello! 🤖');
+    const whatsappURL = `https://wa.me/+250781367201/?text=${initialMessages}`;
     window.open(whatsappURL, '_blank');
   };
 
   return (
+    <div>
+
+      {/* Google AdSense */}
+      <div className="text-center">
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2776294322568123"
+          crossOrigin="anonymous"
+        />
+        <ins
+          className="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client="ca-pub-2776294322568123"
+          data-ad-slot="7061749052"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
+          }}
+        />
+      
+    </div>
     <div className="absolute bottom-0 left-0 w-full border-transparent bg-gradient-to-b from-transparent via-white to-white pt-6 dark:border-white/20 dark:via-[#343541] dark:to-[#343541] md:pt-2">
+      {showPromptList && (
+        <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/10 dark:bg-[#343541]"></div>
+      )}
       <div className="stretch mx-2 mt-4 flex flex-row gap-3 last:mb-2 md:mx-4 md:mt-[52px] md:last:mb-6 lg:mx-auto lg:max-w-3xl">
         <button
           className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
@@ -298,6 +325,8 @@ export const ChatInput = ({
           >
             {plugin ? <IconBrandGoogle size={20} /> : <IconBolt size={20} />}
           </button>
+
+          
 
           {showPluginSelect && (
             <div className="absolute left-0 bottom-14 rounded bg-white dark:bg-[#343541]">
@@ -403,27 +432,7 @@ export const ChatInput = ({
           "Ai Converse is an advanced chatbot kit Developed by Desire BIKORIMANA",
         )}
       </div>
-      {/* Google AdSense */}
-      <div className="text-center">
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2776294322568123"
-          crossOrigin="anonymous"
-        />
-        <ins
-          className="adsbygoogle"
-          style={{ display: 'block' }}
-          data-ad-client="ca-pub-2776294322568123"
-          data-ad-slot="7061749052"
-          data-ad-format="auto"
-          data-full-width-responsive="true"
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `(adsbygoogle = window.adsbygoogle || []).push({});`,
-          }}
-        />
-      </div>
+    </div>
     </div>
   );
 };

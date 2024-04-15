@@ -29,15 +29,23 @@
 }
 
 html {
-  background: #493232;
+  background: #433e3e;
+  
 }
 
 @media (max-width: 720px) {
   pre {
     width: calc(100vw - 110px);
+
   }
 }
 
 pre:has(div.codeblock) {
   padding: 0;
+  margin: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  background: none;
+
 }
